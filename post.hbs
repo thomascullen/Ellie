@@ -1,0 +1,25 @@
+{{!< default}}
+
+<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+	<a href="/" id="logo">Thomas.</a>
+	{{> links}}
+	
+	<div class="cf"></div>
+	
+	{{#post}}
+	
+	<div id="title">
+		<h1>{{title}}</h1>
+		<h2>{{date format='YYYY-MM-DD'}}</h2>
+	</div>
+</header>
+
+<div class="container" id="content" role="main">
+
+    <article class="{{post_class}}" id="post-{{id}}">
+		{{content}}
+    </article>
+	
+	{{/post}}
+
+</div>
