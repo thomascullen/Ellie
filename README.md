@@ -37,7 +37,7 @@ The social links in the footer are setup in /partials/socialLinks.hbs.
 <ul id="social-links">
 	<a href="http://www.twttier.com/thomascullen92">Twitter</a>
 	<a href="https://github.com/Thomascullen92">Github</a>
-	<a href="{{@blog.url}}rss/">Subscribe</a>
+	<a href="{{@blog.url}}/rss">Subscribe</a>
 </ul>
 ```
 
