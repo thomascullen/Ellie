@@ -1,0 +1,30 @@
+{{!< default}}
+
+<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}} data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50" data-stellar-vertical-offset="50">
+	<a href="/" id="blog-title">{{@blog.title}}</a>
+	{{> links}}
+	<div class="cf"></div>
+	
+	<div id="title">
+		<h1>A clean & simple template for ghost</h1>
+		<h2>{{@blog.description}}</h2>
+	</div>
+
+</header>
+
+<div class="container" id="content" role="main">
+
+    {{#foreach posts}}
+
+    <article class="{{post_class}}" id="post-{{id}}">
+		
+		<h1><a href="{{url}}">{{title}}</a></h1>
+		<span class="meta">{{date format='YYYY-MM-DD'}} {{#if tags}} {{#tags}} #{{name}} {{/tags}} {{/if}}</span>
+		<p class="summary">{{excerpt}}</p>
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</div>

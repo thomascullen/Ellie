@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{{body}}}
+	
+	<footer>
+		{{> socialLinks}}
+		<span id="rights">Copyright {{date format='YYYY'}} {{@blog.title}} All rights Reserved</span>
+	</footer>
+	
+    {{ghost_foot}}
+    <script type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).stellar();
+    })
+    </script>
+	<link rel="stylesheet" href="http://jmblog.github.io/color-themes-for-google-code-prettify/css/themes/tomorrow.css">
+</body>
+</html>
