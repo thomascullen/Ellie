@@ -1,6 +1,5 @@
 #ELLIE TEMPLATE FOR GHOST
-Get Ghost [Here](https://en.ghost.org) ( its awesome ) </br>
-See how Ellie looks [Here](http://blog.thomascullendesign.com)
+Get Ghost [Here](https://en.ghost.org) ( its awesome )
 
 ![Ellie](http://i39.tinypic.com/2dub0k6.png)
 
